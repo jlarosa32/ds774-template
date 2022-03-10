@@ -1,5 +1,5 @@
 import os
-import psycopg2
+# import psycopg2
 
 def connect_to_db():
     connection = None
@@ -221,4 +221,3 @@ def delete_record(message_id):
     finally:
         if conn is not None:
             conn.close()
-    

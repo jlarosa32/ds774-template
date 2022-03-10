@@ -26,20 +26,20 @@
   <!-- jumbotron -->
   <div class="jumbotron text-center">
     <!-- Your Image here -->
-    <img src="{{url_for('static',filename='profpic.png')}}" width="135" class="rounded-circle" alt="My picture">
+    <img src="{{url_for('static',filename='jumbotron.jpg')}}" width="300"; height="250" class="rounded-circle" alt="Movie Theatre">
 
     <!-- rounded -->
     <!-- <img src="{{url_for('static',filename='profpic.png')}}" class="rounded-circle" alt=""> -->
 
-    <h1>Joseph LaRosa</h1>
-    <p>This site is all about ME!</p>
+    <h1>Movie Mafia</h1>
+    <p>This site is all about Movie Mafia!</p>
   </div>
 
 
   <!-- navbar -->
 
   <!-- UNH Color -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #043591;"> 
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #690707;"> 
   
   <!-- Standard Bootstrap -->
   <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary"> -->
@@ -53,9 +53,12 @@
 
     {% set navigation_bar = [
         (url_for('home'), 'home', 'Home'),
-        (url_for('courses'), 'courses', 'Courses'),
-        (url_for('contact'), 'contact', 'Contact'),
-        (url_for('admin'), 'admin', 'Admin')
+        (url_for('documents'), 'documents', 'Documents'),
+        (url_for('announcements'), 'announcements', 'Announcements'),
+        (url_for('events'), 'events', 'Events'),
+        (url_for('directoryofemployees'), 'directory of employees', 'Directory'),
+        (url_for('register'), 'register', 'Issues Log'),
+      
     ] -%}
     <!-- Loop to set proper link active in Navbar -->
     {% set active_page = active_page|default('home') -%}
@@ -78,7 +81,7 @@
 <footer class="footer text-center">
   <!-- Copyright -->
   <div class="container">
-        <span class="text-muted">&copy;Joseph LaRosa 2022</span>
+        <span class="text-muted">&copy;Movie Mafia 2022</span>
   </div>
 </footer>
 

@@ -5,7 +5,7 @@ from functions.admin import contact_form,login_user, get_records, get_single_rec
 
 app = Flask(__name__)
 
-app.secret_key = "IAN"
+app.secret_key = "Joseph"
 
 @app.route("/")
 def home():
@@ -13,7 +13,27 @@ def home():
 
 @app.route("/courses")
 def courses():
-    return render_template('courses.html')
+    return render_template('contact.html')
+
+@app.route("/issues")
+def issues():
+    return render_template('issues.html')
+
+@app.route("/documents")
+def documents():
+    return render_template('documents.html')
+
+@app.route("/directoyofemployees")
+def directoryofemployees():
+    return render_template('directoryofemployees.html')
+
+@app.route("/events")
+def events():
+    return render_template('events.html')
+
+@app.route("/announcements")
+def announcements():
+    return render_template('announcements.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
