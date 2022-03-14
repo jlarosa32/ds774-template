@@ -15,9 +15,6 @@ def home():
 def courses():
     return render_template('contact.html')
 
-@app.route("/issues")
-def issues():
-    return render_template('issues.html')
 
 @app.route("/documents")
 def documents():
