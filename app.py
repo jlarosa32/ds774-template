@@ -15,7 +15,6 @@ def home():
 def courses():
     return render_template('contact.html')
 
-
 @app.route("/documents")
 def documents():
     return render_template('documents.html')
@@ -65,7 +64,7 @@ def admin():
             result = contact_form(fname, lname, eaddress, message)
 
         # If the form was Login, perform log in steps
-        # if request.form.get('admin') == 'Login':
+        if request.form.get('admin') == 'Login':
             username = request.form['username']
             password = request.form['password']
 
