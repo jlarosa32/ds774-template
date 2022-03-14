@@ -11,7 +11,7 @@ app.secret_key = "Joseph"
 def home():
     return render_template('home.html')
 
-@app.route("/courses")
+@app.route("/contact")
 def courses():
     return render_template('contact.html')
 
