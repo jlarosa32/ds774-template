@@ -60,7 +60,7 @@ def admin():
 
     # If method was POST, a form was submitted
     if request.method == 'POST':
-        if request.form.get('admin') == 'post':
+        if request.form.get('admin') == 'issue':
             fname = request.form['fname']
             lname = request.form['lname']
             eaddress = request.form['eaddress']
