@@ -15,26 +15,6 @@ def home():
 def courses():
     return render_template('courses.html')
 
-@app.route("/contact")
-def courses():
-    return render_template('contact.html')
-
-@app.route("/documents")
-def documents():
-    return render_template('documents.html')
-
-@app.route("/directoyofemployees")
-def directoryofemployees():
-    return render_template('directoryofemployees.html')
-
-@app.route("/events")
-def events():
-    return render_template('events.html')
-
-@app.route("/announcements")
-def announcements():
-    return render_template('announcements.html')
-
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     message = ''
@@ -117,8 +97,6 @@ def register():
         
 
     return render_template('register.html', error = error, id = new_id)
-
-
 @app.route("/edit", methods=['GET', 'POST'])
 def edit():
     msg_id = request.args['id']
@@ -143,3 +121,21 @@ def edit():
     entry = get_single_record(msg_id)
 
     return render_template('edit.html', record = entry)
+
+@app.route("/documents")
+def documents():
+    return render_template('documents.html')
+
+@app.route("/directoyofemployees")
+def directoryofemployees():
+    return render_template('directoryofemployees.html')
+
+@app.route("/events")
+def events():
+    return render_template('events.html')
+
+@app.route("/announcements")
+def announcements():
+    return render_template('announcements.html')
+
+
