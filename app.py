@@ -5,11 +5,15 @@ from functions.admin import contact_form,login_user, get_records, get_single_rec
 
 app = Flask(__name__)
 
-app.secret_key = "Joseph"
+app.secret_key = "Ian"
 
 @app.route("/")
 def home():
     return render_template('home.html')
+
+@app.route("/courses")
+def courses():
+    return render_template('courses.html')
 
 @app.route("/contact")
 def courses():
@@ -31,22 +35,22 @@ def events():
 def announcements():
     return render_template('announcements.html')
 
-# @app.route('/contact', methods=['GET', 'POST'])
-# def contact():
-#     message = ''
-#     if request.method == 'POST':
-#         fname = request.form['fname']
-#         lname = request.form['lname']
-#         eaddress = request.form['eaddress']
-#         message = request.form['message']
-#         result = contact_form(fname, lname, eaddress, message)
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    message = ''
+    if request.method == 'POST':
+        fname = request.form['fname']
+        lname = request.form['lname']
+        eaddress = request.form['eaddress']
+        message = request.form['message']
+        result = contact_form(fname, lname, eaddress, message)
 
-#         if result:
-#             return render_template('contact.html', message='Thank you for your submission')
-#         else:
-#             return render_template('contact.html', message='Error with submission')
-#     else:
-#         return render_template('contact.html', message=message)
+        if result:
+            return render_template('contact.html', message='Thank you for your submission')
+        else:
+            return render_template('contact.html', message='Error with submission')
+    else:
+        return render_template('contact.html', message=message)
 
 @app.route("/admin", methods=['GET', 'POST'])
 def admin():
