@@ -11,8 +11,6 @@
       <!-- If there is a current user session, display database entries -->
       {% if session['user_id'] %}
       <div class="form-group">
-        <form action="" method="post" name="logout">
-          <input class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" />
       </div>
       <div class="col-sm">
         <form method="post" action="" name="admin">
@@ -36,8 +34,8 @@
                 <div class="row">
                     <div class="col-sm-12 form-group">
                       <button class="btn btn-info btn-lg" type="submit" name="admin" value="issue">Send</button>
-                      <!-- <form action="" method="post" name="logout">
-                      <input class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" /> -->
+                      <form action="" method="post" name="logout">
+                      <input class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" />
                       </form>
                     </div>
                 </div>
