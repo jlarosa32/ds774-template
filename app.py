@@ -48,7 +48,7 @@ def admin():
             result = contact_form(fname, lname, eaddress, message)
 
         # If the form was Login, perform log in steps
-        if request.form.get('admin') == 'Login':
+        elif request.form.get('admin') == 'Login':
             username = request.form['username']
             password = request.form['password']
 
