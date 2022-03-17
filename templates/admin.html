@@ -2,6 +2,14 @@
 {% block title %}<title>Admin</title>{% endblock %}
 {% set active_page = "admin" %}
 
+<style>
+button {
+  display: inline;
+  margin: auto;
+  padding: 5px;
+}
+</style>
+
 {% block content %}
 <!-- container for tablular structure: 1 row & 1 column -->
 <div class="container">
@@ -51,7 +59,7 @@
                 <button class="btn btn-info btn-lg" type="submit" name="admin" value="issue">Send</button>
               </form>
                 <form action="" method="post" name="logout">
-                <input class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" /> 
+                <button class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" /> 
               </form>
             </div>
           </div>
