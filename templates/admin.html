@@ -20,6 +20,42 @@
     
           <!-- column 1 -->
           <div class="col-sm-6">
+            <div class="col-sm-6">
+              <form method="post" action="" name="admin">
+                  <div class="col-sm">
+                      <div class="row">
+                          <div class="col-sm-6 form-group">
+                              <input class="form-control" id="name" name="fname" placeholder="First Name" type="text"
+                                  required>
+                          </div>
+                          <div class="col-sm-6 form-group" style="text-align:left;">
+                              <input class="form-control" id="name" name="lname" placeholder="Last Name" type="text"
+                                  required>
+                          </div>
+                          <div class="col-sm-6 form-group">
+                              <input class="form-control" id="email" name="eaddress" placeholder="Email" type="email"
+                                  required>
+                          </div>
+                      </div>
+                      <textarea class="form-control" id="comments" name="message" placeholder= "Tell Us Your Issue"
+                          rows="5"></textarea><br>
+                    </form>
+                    
+                  <div class="row">
+                    <div class="col-sm-12 form-group">
+                      <button class="btn btn-info btn-lg" type="submit" name="admin" value="issue">Send</button>
+                    </div>
+                  </div>
+      <!-- If there is a current user session, display database entries -->
+                  <div class="form-group">
+                     <form action="" method="post" name="logout">
+                      <input class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" /> 
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      <br>
 
       <h3>Contact Me With Any Issues</h3>
         
@@ -32,7 +68,8 @@
             </div>
             <br>
             <br>
-      <div class="col-sm-6">
+          <!--Column 2-->
+      <!-- <div class="col-sm-6">
         <form method="post" action="" name="admin">
             <div class="col-sm">
                 <div class="row">
@@ -58,7 +95,7 @@
                 <button class="btn btn-info btn-lg" type="submit" name="admin" value="issue">Send</button>
               </div>
             </div>
-<!-- If there is a current user session, display database entries -->
+ If there is a current user session, display database entries 
             <div class="form-group">
                <form action="" method="post" name="logout">
                 <input class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" /> 
@@ -66,7 +103,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 <br>
       <!-- Show database records here -->
       <table class="table table-striped">
