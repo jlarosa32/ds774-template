@@ -15,12 +15,14 @@
 
       <!-- If there is a current user session, display database entries -->
       {% if session['user_id'] %}
-      <h3>Contact Me With Any Issues</h3>
-            <div class="container">
-            <div class="row">
+      <div class="container">
+        <div class="row">
+    
+          <!-- column 1 -->
+          <div class="col-sm-6">
 
-      <!-- column 1 -->
-      <div class="col-sm-6">
+      <h3>Contact Me With Any Issues</h3>
+        
                         <p>Please fill in the form below and leave your deatails if you come across any issues.</p>
                         <p><i class="bi bi-geo-fill"></i></span> 389 Exeter Road, Hampton, 03842 US</p>
                         <p><i class="bi bi-telephone-fill"></i></span> (603) 930-1666</p>
@@ -58,7 +60,7 @@
                 <button class="btn btn-info btn-lg" type="submit" name="admin" value="issue">Send</button>
               </div>
             </div>
-
+<!-- If there is a current user session, display database entries -->
             <div class="form-group">
                <form action="" method="post" name="logout">
                 <input class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" /> 
