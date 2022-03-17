@@ -3,11 +3,8 @@
 {% set active_page = "admin" %}
 
 <style>
-button {
-  display: inline;
-  margin: auto;
-  padding: 5px;
-}
+
+  
 </style>
 
 {% block content %}
@@ -56,10 +53,10 @@ button {
               <form>
             <div class="row">
               <div class="col-sm-12 form-group">
-                <button class="btn btn-info btn-lg" type="submit" name="admin" value="issue">Send</button>
+                <button class="btn btn-info btn-lg" type="submit" name="admin" value="issue" data-inline="true">Send</button>
               </form>
                 <form action="" method="post" name="logout">
-                <button class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout"> Logout </button>
+                <input class="btn btn-primary btn-lg" name="admin" type="submit" value="Logout" data-inline="true" /> 
               </form>
             </div>
           </div>
