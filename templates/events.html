@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% block title %}<title>Events</title>{% endblock %}
 {% set active_page = "events.html" %}
-<style>
-li {color:green; font-family:copperplate, fantasy;
-		background-color:red;}
-</style>
 
 {% block content %}
 <div style="color:red">
@@ -12,7 +8,7 @@ li {color:green; font-family:copperplate, fantasy;
 </div>
   <ul>
     
-    <li>Sponsered Dinner</li><br>
+    <li style="color:red; font-family:arial; font-size:50%;">Sponsered Dinner</li><br>
       <p>This part takes place on July 4th on the front lawn. Cookout and all the games. Contact Peyton Hillis for more details.
       </p>
     <img src="{{url_for('static',filename='cookout.jpg')}}" width="300"; height="250" alt="July 4th Cookout">
