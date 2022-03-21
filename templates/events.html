@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block title %}<title>Events</title>{% endblock %}
 {% set active_page = "events.html" %}
+<style>
+li {
+  float:right;
+  margin:0 0 0 20px;
+}
+</style>
 
 {% block content %}
 <div style="color:red">
@@ -8,8 +14,8 @@
 </div>
   <ul>
     
-    <li style="background-color:rgb(13, 13, 212)", style="color: white;">Sponsered Dinner</li><br>
-      <p>This part takes place on July 4th on the front lawn. Cookout and all the games. Contact Peyton Hillis for more details
+    <li>Sponsered Dinner</li><br>
+      <p>This part takes place on July 4th on the front lawn. Cookout and all the games. Contact Peyton Hillis for more details.
       </p>
     <img src="{{url_for('static',filename='cookout.jpg')}}" width="300"; height="250" alt="July 4th Cookout">
     <br>
