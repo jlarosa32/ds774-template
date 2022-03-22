@@ -3,11 +3,13 @@
 {% set active_page = "documents.html" %}
 
 {% block content %}
-<div class="container"; class="row"; class="col-sm-6"; style="text-align: left">
-    <div style="color:white";>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div style= "text-align: left">
+                <div style="color:white">
 <h3 style="background-color:rgb(13, 13, 212);" font-family="Algerian;">Work Documents</h3>
 </div>
-
 <p style="color: red;"><u>Below Are A Few Links to Some Work Documents: </u></p>
 <h3><i>Judge Ruling in Courtcase:</i></h3>
     <a href="https://www.cnbc.com/2020/08/07/us-judge-ends-decades-old-movie-theater-rules-governing-hollywood.html">Big court case</a>
@@ -25,8 +27,8 @@
     <a href="https://beverlyboy.com/filmmaking/federal-laws-in-the-film-industry-what-they-mean-to-filmmakers/">Film industry regulators</a>
     <br>
     <br>
-</div>
-
+        </div>
+    </div>
 <div class="col-sm-6">
 
 <img src="{{url_for('static',filename='movietheatre.jpg')}}" width="450"; height="300"; style="float:center"; alt="Movie Theatre">
