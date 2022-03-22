@@ -3,12 +3,12 @@
 {% set active_page = "events.html" %}
 
 {% block content %}
-<div style="color:red">
-<h3>Upcoming Events!</h3>
+
+<h3 style="color:white; background-color: rgb(13, 13, 212);">Upcoming Events!</h3>
 </div>
 </div>
   <ul>
-    <li style="color:white; background-color: rgb(13, 13, 212);">Sponsered Dinner</li>
+    <li style="color:red">Sponsered Dinner</li>
       <p>This part takes place on July 4th on the front lawn. Cookout and all the games. Contact Peyton Hillis for more details.
       </p>
     <img src="{{url_for('static',filename='cookout.jpg')}}" width="300"; height="250" alt="July 4th Cookout">
@@ -32,9 +32,9 @@
      <div style="text-align:center">
      <img src="{{url_for('static',filename='cash.jpg')}}" width="200" height="140" alt="Cash Cow">
     </div>
+    </ul>
      <br>
      <br>
-  </ul>
 
 
 {% endblock %}
