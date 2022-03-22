@@ -3,6 +3,12 @@
 {% set active_page = "documents.html" %}
 
 {% block content %}
+<div class="container">
+    <div class="row">
+
+      <!-- column 1 -->
+      <div class="col-sm-6">
+
 <div style="color:white">
 <h3 style="background-color:rgb(13, 13, 212)" font-family="Algerian">Work Documents</h3>
 </div>
@@ -23,4 +29,15 @@
     <a href="https://beverlyboy.com/filmmaking/federal-laws-in-the-film-industry-what-they-mean-to-filmmakers/">Film industry regulators</a>
     <br>
     <br>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6">
+
+    <img src="{{url_for('static',filename='movietheatre.jpg')}}" width="100"; height="150" class="rounded-circle" alt="Movie Theatre">
+
+
+
+</div>
   {% endblock %}
